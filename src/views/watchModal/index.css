@@ -1,0 +1,15 @@
+.frame-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+iframe 
+{
+ display: block; 
+ width: 100%; 
+ border: none; 
+ overflow-y: auto; 
+ overflow-x: hidden;
+}
