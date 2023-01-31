@@ -20,7 +20,7 @@ const Search = ({
             <Card style={{ minWidth: "400px" }}>
                 <CardBody>
                     <CardTitle>
-                        <h4>Informe o tempo que assistirá por dia em minutos</h4>
+                        <h4>Informe o tempo que assistira por dia em minutos</h4>
                     </CardTitle>
                     <div className="week-container">
                         <InputPattern

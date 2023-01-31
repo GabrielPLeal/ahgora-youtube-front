@@ -7,9 +7,14 @@ import { weekDayYup } from '../../utils';
 
 const useContent = () => {
     const [loading, setLoading] = useState()
-    const { register, setValue, getValues, formState: { errors }, handleSubmit, watch } = useForm({
-        resolver: yupResolver(validationSchema)
-    })
+    const {
+        register,
+        setValue,
+        getValues,
+        formState: { errors },
+        handleSubmit,
+        watch
+    } = useForm({ resolver: yupResolver(validationSchema) })
 
     const generateUrl = (data) => {
         let url = '/search?'

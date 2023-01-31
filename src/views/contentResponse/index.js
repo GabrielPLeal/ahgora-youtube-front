@@ -31,7 +31,6 @@ const ContentResponse = ({
                 modalToggle={handleClose}
                 handleClose={handleClose}
                 currentUrl={currentUrl}
-                setCurrentUrl={setCurrentUrl}
             />
             <Card className='mb-4'>
                 <CardBody>
@@ -53,6 +52,7 @@ const ContentResponse = ({
                     data={watch('videosData')}
                     showPaginationBottom={true}
                     style={{ maxHeight: "30rem", overflow: "auto" }}
+                    noDataText="Nenhum vídeo listado..."
                     minRows="1"
                     columns={[
                         {

@@ -3,8 +3,6 @@ import './index.css'
 const InputPattern = ({
     name,
     label,
-    max,
-    min,
     type,
     register,
     placeholder,
