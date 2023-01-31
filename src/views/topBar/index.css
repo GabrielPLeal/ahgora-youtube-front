@@ -1,0 +1,14 @@
+.top-bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    background-color: #dd1e1e;
+    height: 5%;
+    width: 100%;
+}
+
+.title {
+    margin-left: 2rem;
+    color: white
+}
