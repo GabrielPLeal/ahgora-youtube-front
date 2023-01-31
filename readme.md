@@ -31,7 +31,7 @@ In the project directory, you can run:
 
 #### `npm install`
 
-NOTE: If you hava problems installing dependencies, run the following?
+NOTE: If you have problems installing dependencies, run the following:
 
 #### `npm install --force`
 
