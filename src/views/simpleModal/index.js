@@ -18,7 +18,7 @@ const SimpleModal = ({
                 padding: 30,
             }}
         >
-            <Modal isOpen={modal} toggle={toggle} modalTransition={{ timeout: 2000 }}>
+            <Modal isOpen={modal} toggle={toggle} modalTransition={{ timeout: 500 }}>
                 <ModalHeader style={{ backgroundColor: '#FAFBFC' }}>
                     <div className="d-flex align-items-center">
                         <IoIosClose size={30} className="mr-2" onClick={handleClose} />

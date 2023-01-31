@@ -56,7 +56,7 @@ const ContentResponse = ({
                     minRows="1"
                     columns={[
                         {
-                            Header: 'Titulo',
+                            Header: 'Título',
                             accessor: 'title',
                             style: { 'whiteSpace': 'unset' },
                             Cell: (props) => <div className="text-center">{props.value}</div>,
@@ -70,7 +70,7 @@ const ContentResponse = ({
                                 </div>,
                         },
                         {
-                            Header: 'Video',
+                            Header: 'Vídeo',
                             accessor: 'url',
                             Cell: (props) => {
                                 return (
