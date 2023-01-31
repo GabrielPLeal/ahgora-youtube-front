@@ -1,28 +1,29 @@
 .search-container {
     height: 100%;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     flex-direction: column;
+    flex-wrap: wrap
 }
 
 .search-input-container {
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     padding: 1rem 1rem 2rem 1rem;
 }
 
 .week-container {
-    display: flex !important;
+    display: flex;
     flex-direction: row;
     padding: 1rem;
-    justify-content: space-between !important;
+    justify-content: space-between;
     flex-wrap: wrap
 }
 
 .search-button-container {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .w-12 {

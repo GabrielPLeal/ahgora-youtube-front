@@ -11,12 +11,13 @@ const Search = ({
     register,
     handleSubmit,
     errors,
-    submit
+    submit,
+    cleanSearch
 }) => {
 
     return (
         <div className='search-container'>
-            <Card>
+            <Card style={{ minWidth: "400px" }}>
                 <CardBody>
                     <CardTitle>
                         <h4>Informe o tempo que assistirá por dia em minutos</h4>
@@ -101,7 +102,7 @@ const Search = ({
                         <button
                             type="button"
                             class="btn btn-danger"
-                        // onClick={cleanData()}
+                            onClick={cleanSearch}
                         >
                             Limpar Pesquisa
                         </button>
