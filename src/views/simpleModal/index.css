@@ -1,0 +1,19 @@
+.containerModal {
+    display: 'block';
+    width: 1000 !important;
+    padding: 30;
+    background-color: red;
+}
+
+.modal-content {
+    width: 850px;
+}
+
+.modal-dialog {
+    max-width: 850px;
+}
+
+.date-content {
+    width: 150px !important;
+    flex: none !important
+}

@@ -7,7 +7,7 @@ import { weekDayYup } from '../../utils';
 
 const useContent = () => {
     const [loading, setLoading] = useState()
-    const { register, setValue, getValues, formState: { errors }, handleSubmit } = useForm({
+    const { register, setValue, getValues, formState: { errors }, handleSubmit, watch } = useForm({
         resolver: yupResolver(validationSchema)
     })
 
@@ -33,19 +33,36 @@ const useContent = () => {
     const submit = async (data) => {
         setLoading(true)
         const url = generateUrl(data)
-        const resp = await youtubeApi.get(url)
-        setContentData(resp)
+        await youtubeApi.get(url).then(
+            (resp) => {
+                setContentData(resp)
+            }
+        ).catch(
+            (error) => console.log(error)
+        )
         setLoading(false)
     }
 
+    const cleanSearch = () => {
+        const values = getValues()
+
+        Object.keys(values).forEach(
+            (key) => {
+                let newValue = key === 'videosData' ? [] : ""
+                setValue(key, newValue)
+            }
+        )
+    }
 
     return {
         register,
         setValue,
         getValues,
+        watch,
         errors,
         handleSubmit,
         submit,
+        cleanSearch,
         loading
     }
 }

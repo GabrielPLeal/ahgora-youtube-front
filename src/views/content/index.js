@@ -10,7 +10,9 @@ const Content = (props) => {
         handleSubmit,
         submit,
         loading,
-        getValues
+        getValues,
+        cleanSearch,
+        watch
     } = useContent()
 
     return (
@@ -20,10 +22,12 @@ const Content = (props) => {
                 handleSubmit={handleSubmit}
                 submit={submit}
                 errors={errors}
+                cleanSearch={cleanSearch}
             />
             <ContentResponse
                 loading={loading}
                 getValues={getValues}
+                watch={watch}
             />
         </div>
     )
