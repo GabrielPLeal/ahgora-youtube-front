@@ -18,13 +18,13 @@ const useContentResponse = () => {
         const hours = (minutes - restMinutes) / 60
 
         if (hasValue(hours)) {
-            stringDate += `${hours}H `
+            stringDate += `${hours}h `
         }
         if (hasValue(restMinutes)) {
-            stringDate += `${restMinutes}M `
+            stringDate += `${restMinutes}m `
         }
         if (hasValue(seconds)) {
-            stringDate += `${seconds}S`
+            stringDate += `${seconds}s`
         }
         return stringDate
     }
